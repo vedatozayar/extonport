@@ -1,0 +1,116 @@
+.home {
+  background-color: rgb(236, 234, 234);
+  .home-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url('../../assets/h1_hero.jpg');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 45rem;
+    padding-top: 6rem;
+
+    .home-header--container {
+      padding: 6rem 1rem;
+      .home-header--title {
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        max-width: 50rem;
+      }
+      .home-header--line {
+        background-color: red;
+        height: 0.3rem;
+        width: 40px;
+        content: '';
+        margin-bottom: 1rem;
+      }
+      .home-header--text {
+        color: #fff;
+        max-width: 40rem;
+        margin-bottom: 3rem;
+      }
+      .home-header--btn_filled {
+        padding: 1rem 2rem;
+        background-color: #e11d07;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-right: 1rem;
+        cursor: pointer;
+      }
+      .home-header--btn_trans {
+        padding: 1rem 5.51rem;
+        background-color: transparent;
+        color: #fff;
+        border-color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+  .features {
+    margin: 3rem 0rem;
+    .features-container {
+      margin: 0rem 1rem;
+      .features-content {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        .feature-element {
+          background-color: #fff;
+          border-radius: 5px;
+          -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+          box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+          padding: 20px;
+          .feature-image {
+            width: 100%;
+            height: 15rem;
+          }
+
+          .features-title {
+            text-transform: uppercase;
+            margin: 1rem 0rem;
+            color: gray;
+          }
+          .feature-text {
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+  .story {
+    margin-top: 1rem;
+    padding: 1rem;
+    .story-container {
+      .info {
+        color: gray;
+        .info-title {
+          text-transform: uppercase;
+          font-size: 2.2rem;
+          font-weight: 900;
+        }
+        .home-header--line {
+          background-color: red;
+          height: 0.3rem;
+          width: 40px;
+          content: '';
+          margin-bottom: 1rem;
+        }
+        .info-text {
+          max-width: 30rem;
+          margin-bottom: 2rem;
+          line-height: 2rem;
+        }
+        .info-link {
+          text-decoration: none;
+          color: gray;
+          border-bottom: 2px solid rgb(100, 100, 100);
+          padding-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}

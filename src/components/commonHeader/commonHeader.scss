@@ -1,0 +1,30 @@
+.commonHeader {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../../assets/h1_hero.jpg');
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30rem;
+  padding-top: 6rem;
+
+  .ch-container {
+    max-width: 50rem;
+    padding: 6rem;
+    .ch-header {
+      color: #fff;
+      font-size: 4rem;
+      font-weight: 900;
+    }
+    .ch-line {
+      background-color: red;
+      height: 0.3rem;
+      width: 40px;
+      content: '';
+      margin-bottom: 1rem;
+    }
+    .ch-text {
+      color: #fff;
+    }
+  }
+}
