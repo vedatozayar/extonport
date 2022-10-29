@@ -1,3 +1,213 @@
 .about {
-  height: 100vh;
+  background-color: #ebebeb;
+  .about-msg {
+    background-color: #ebebeb;
+    .container {
+      position: relative;
+      @media screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+        position: static;
+      }
+      .img-container {
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        @media screen and (max-width: 900px) {
+          width: 100%;
+          margin-bottom: 1rem;
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      .msg-cont {
+        padding: 3rem 0rem 3rem 3rem;
+        width: 50%;
+
+        position: absolute;
+        top: 35%;
+        left: 43%;
+        background-color: #fff;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        @media screen and (min-width: 900px) and (max-width: 1044px) {
+          top: 25%;
+          left: 53%;
+          width: 40%;
+        }
+        @media screen and (max-width: 900px) {
+          position: static;
+          width: 100%;
+        }
+        @media screen and (min-width: 1044px) {
+          top: 25%;
+          left: 38%;
+        }
+        h2 {
+          font-weight: 900;
+          font-size: 2.5rem;
+          @media screen and (max-width: 900px) {
+            font-size: 2rem;
+          }
+        }
+        p {
+          color: gray;
+          font-weight: 500;
+          line-height: 2rem;
+        }
+        .signature-cont {
+          width: 10rem;
+        }
+      }
+    }
+  }
+  .testimonial {
+    background: linear-gradient(rgba(250, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url('../../assets/h1_hero.jpg');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .container {
+      h2 {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 900;
+      }
+      .reviews {
+        display: grid;
+        padding: 3rem;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+
+        :nth-child(2) {
+          grid-row-start: 2;
+
+          grid-column-start: 2;
+        }
+        :nth-child(3) {
+          grid-row-start: 4;
+          grid-row-end: 4;
+        }
+        :nth-child(4) {
+          grid-row-start: 5;
+          grid-row-end: 5;
+          grid-column-start: 2;
+        }
+        @media screen and (max-width: 900px) {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+        .review {
+          background-color: #fff;
+          -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+          box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+          padding: 2rem;
+          @media screen and (max-width: 900px) {
+            width: 100%;
+          }
+          .client-info {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            .img-cont {
+              img {
+                height: 3rem;
+                width: 3rem;
+                border-radius: 50%;
+                object-fit: cover;
+              }
+            }
+            .client-name {
+              font-weight: 900;
+              color: rgb(109, 109, 109);
+              font-size: 1.5rem;
+              h6 {
+                margin: 0.3rem;
+              }
+            }
+          }
+        }
+        .rating {
+          color: gold;
+          margin: 1.5rem 0rem;
+
+          .icon {
+            margin-left: 0.5rem;
+            height: 1.5rem;
+          }
+        }
+        p {
+          color: gray;
+          font-weight: 500;
+          line-height: 1.8rem;
+        }
+      }
+    }
+  }
+  .team {
+    background-color: #fbfbfb;
+    .container {
+      .members {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+
+        @media screen and (max-width: 900px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .member {
+          background-color: #fff;
+          text-align: center;
+          img {
+            height: 80%;
+            text-align: center;
+            object-fit: cover;
+          }
+          .member-details {
+            color: rgb(126, 124, 124);
+            font-size: 0.8rem;
+            margin: 2rem;
+            h2 {
+              font-weight: 900;
+            }
+            h3 {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .gallery {
+    background-color: #eee;
+    .container {
+      .images {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+        @media screen and (max-width: 900px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .img {
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @media screen and (max-width: 900px) {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
 }

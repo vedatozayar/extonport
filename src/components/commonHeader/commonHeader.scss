@@ -28,3 +28,17 @@
     }
   }
 }
+@media screen and (max-width: 480px) {
+  .commonHeader {
+    padding-top: 6rem;
+    .ch-container {
+      padding: 5rem 1rem;
+      .ch-header {
+        font-size: 2.5rem;
+      }
+      .ch-text {
+        width: 100%s;
+      }
+    }
+  }
+}

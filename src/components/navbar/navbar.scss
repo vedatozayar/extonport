@@ -16,6 +16,11 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 2rem;
+    position: relative;
+    @media screen and (max-width: 780px) {
+      display: flex;
+      margin: 0;
+    }
 
     .logo-cont {
       .logo {
@@ -26,10 +31,18 @@
     }
     .menu {
       display: flex;
+      height: 6rem;
+      align-items: center;
       .menu-links {
         display: flex;
+        width: 100%;
+        height: 100%;
         list-style: none;
+        align-items: center;
         gap: 6rem;
+        @media screen and (max-width: 780px) {
+          display: none;
+        }
 
         .menu-link {
           text-decoration: none;
@@ -38,9 +51,55 @@
             font-weight: 800;
             letter-spacing: 1.5px;
             color: gray;
+            &:hover,
+            &:focus {
+              color: #e11d07;
+            }
           }
         }
       }
     }
+  }
+  @media screen and (max-width: 780px) {
+    .hamburger {
+      .icon {
+        width: 5rem;
+      }
+      .ham-menu {
+        width: 100%;
+        z-index: 1;
+        ul {
+          width: 100%;
+          z-index: 1;
+          height: 60%;
+          position: absolute;
+          top: 8rem;
+          left: 0rem;
+          background-color: #fff;
+          list-style: none;
+          padding: 0;
+
+          li {
+            background-color: #fff;
+
+            border-top: 1px solid gray;
+            padding: 1rem;
+
+            a {
+              color: gray;
+              font-weight: 500;
+              font-size: 1.2rem;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .hamburger {
+    display: none;
   }
 }

@@ -1,0 +1,40 @@
+.contact {
+  .contact-form {
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      input {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-color: rgb(157, 156, 156);
+        color: gray;
+        font-size: 0.8rem;
+        border-style: solid;
+        &:focus {
+          outline: none;
+        }
+      }
+      textarea {
+        height: 10rem;
+        padding: 1rem;
+        font-size: 0.8rem;
+        border-radius: 0.5rem;
+        border-style: solid;
+        &:focus {
+          outline: none;
+        }
+      }
+      button {
+        color: #fff;
+        background-color: #e11d07;
+        border: none;
+        padding: 1rem;
+        max-width: 15rem;
+        cursor: pointer;
+        font-weight: 900;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
