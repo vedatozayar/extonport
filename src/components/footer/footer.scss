@@ -99,7 +99,7 @@
             .logo-container {
               @media screen and (max-width: 940px) {
                 img {
-                  width: 80%;
+                  max-width: 60%;
                   margin: 2rem 0rem;
                 }
               }

@@ -37,4 +37,70 @@
       }
     }
   }
+  .details-content {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .contact {
+    .content-container {
+      background-color: #eaeaea;
+      padding: 0rem 2rem;
+      max-width: 120rem;
+
+      .content {
+        padding: 6rem;
+
+        display: flex;
+        justify-content: center;
+
+        .contact-form {
+          flex: 1;
+          width: 30%;
+          background-color: #fff;
+          -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+          box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        }
+        .details-content {
+          display: block;
+          flex: 1;
+          background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url('../../assets/h1_hero.jpg');
+          width: 100%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+          box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+          .fields {
+            color: #eaeaea;
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            gap: 3rem;
+            padding: 3rem;
+            .field {
+              display: flex;
+              align-items: center;
+              .icon-container {
+                .icon {
+                  height: 2rem;
+                  padding: 2rem;
+                }
+              }
+              .info {
+                display: flex;
+                flex-direction: column;
+                h1 {
+                  font-size: 1.5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

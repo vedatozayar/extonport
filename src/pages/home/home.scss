@@ -3,7 +3,7 @@
   .home-header {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url('../../assets/h1_hero.jpg');
-    width: 100%;
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -12,7 +12,8 @@
 
     .home-header--container {
       padding: 6rem 1rem;
-      width: min(60%, 70rem);
+      margin: auto;
+      max-width: 62.5rem;
       .home-header--title {
         color: #fff;
         font-size: 3rem;
@@ -53,7 +54,9 @@
   .features {
     margin: 3rem 0rem;
     .features-container {
-      margin: 0rem 1rem;
+      //margin: 0rem 1rem;
+      margin: auto;
+      max-width: 62.5rem;
       .features-content {
         display: grid;
         gap: 1rem;
@@ -97,6 +100,8 @@
     margin-top: 1rem;
     padding: 1rem;
     .story-container {
+      margin: auto;
+      max-width: 102.5rem;
       @media screen and (min-width: 1200px) {
         display: flex;
         .info {

@@ -1,6 +1,8 @@
 .careers {
   .culture {
     .container {
+      margin: auto;
+      max-width: 62.5rem;
       .content {
         display: flex;
         align-items: center;
@@ -59,6 +61,8 @@
   .join {
     padding-bottom: 6rem;
     .container {
+      margin: auto;
+      max-width: 62.5rem;
       p {
         margin-top: 2rem;
         font-weight: 500;
@@ -67,6 +71,62 @@
         span {
           color: #e11d07;
           margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 780px) {
+  .careers {
+    .culture {
+      .container {
+        .content {
+          flex-direction: column;
+        }
+      }
+    }
+    .perks {
+      padding-bottom: 1rem;
+      .container {
+        .cards {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+    .join {
+      padding-bottom: 3rem;
+      .container {
+        p {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 780px) and (max-width: 900px) {
+  .careers {
+    .culture {
+      .container {
+        .content {
+        }
+      }
+    }
+    .perks {
+      padding-bottom: 1rem;
+      .container {
+        .cards {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    }
+    .join {
+      padding-bottom: 3rem;
+      .container {
+        p {
+          max-width: 100%;
         }
       }
     }
