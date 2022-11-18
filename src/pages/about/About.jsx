@@ -18,6 +18,9 @@ import Sign from '../../assets/signature.png';
 import './about.scss';
 import TitleLine from '../../components/titleLine/TitleLine';
 import testi1 from '../../assets/testi1.jpg';
+import testi2 from '../../assets/testi2.jpg';
+import testi3 from '../../assets/testi3.jpg';
+import testi4 from '../../assets/testi4.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 const About = () => {
@@ -59,7 +62,7 @@ const About = () => {
                   <img src={testi1} alt='testi1' />
                 </div>
                 <div className='client-name'>
-                  <h4>1Richard Hughes</h4>
+                  <h4>Richard Hughes</h4>
                   <h6>Community Head</h6>
                 </div>
               </div>
@@ -79,11 +82,11 @@ const About = () => {
             <div className='review'>
               <div className='client-info'>
                 <div className='img-cont'>
-                  <img src={testi1} alt='testi1' />
+                  <img src={testi2} alt='testi1' />
                 </div>
                 <div className='client-name'>
-                  <h4>2Richard Hughes</h4>
-                  <h6>Community Head</h6>
+                  <h4>Taliah Moran</h4>
+                  <h6>Senior Sales Manager</h6>
                 </div>
               </div>
               <div className='rating'>
@@ -94,19 +97,20 @@ const About = () => {
                 <FontAwesomeIcon className='icon' icon={faStar} />
               </div>
               <p>
-                Thank you for fast and certain delivery of our
-                products.Definetly excellent job and service.Extonport is by far
-                our best business partner when it comes to transport.
+                Just a quick note to acknowledge the outstanding service
+                supplied by Tony Pachel with his follow up on e-mails, bills of
+                lading, requests for pricing and his amazing pursuit of late
+                freight forwarders. It is a pleasure to work with him.
               </p>
             </div>
             <div className='review'>
               <div className='client-info'>
                 <div className='img-cont'>
-                  <img src={testi1} alt='testi1' />
+                  <img src={testi3} alt='testi1' />
                 </div>
                 <div className='client-name'>
-                  <h4>3Richard Hughes</h4>
-                  <h6>Community Head</h6>
+                  <h4>Kevin Patel</h4>
+                  <h6>Executive Director</h6>
                 </div>
               </div>
               <div className='rating'>
@@ -117,19 +121,19 @@ const About = () => {
                 <FontAwesomeIcon className='icon' icon={faStar} />
               </div>
               <p>
-                Thank you for fast and certain delivery of our
-                products.Definetly excellent job and service.Extonport is by far
-                our best business partner when it comes to transport.
+                The Extonport logistics team is amazing. Professional, timely,
+                communicative. They work seamlessly and when troubleshooting is
+                needed, they always find the right solution.
               </p>
             </div>
             <div className='review'>
               <div className='client-info'>
                 <div className='img-cont'>
-                  <img src={testi1} alt='testi1' />
+                  <img src={testi4} alt='testi1' />
                 </div>
                 <div className='client-name'>
-                  <h4>4Richard Hughes</h4>
-                  <h6>Community Head</h6>
+                  <h4>Lleyton Riggs</h4>
+                  <h6>Project Manager – Strategic Sourcing</h6>
                 </div>
               </div>
               <div className='rating'>
@@ -140,9 +144,12 @@ const About = () => {
                 <FontAwesomeIcon className='icon' icon={faStar} />
               </div>
               <p>
-                Thank you for fast and certain delivery of our
-                products.Definetly excellent job and service.Extonport is by far
-                our best business partner when it comes to transport.
+                I want to express my appreciation to your team for their support
+                for a Mexico shipment for a list of machines and fixtures that
+                were delivered today.This shipment is the first batch of a
+                larger list. I will keep Extonport in mind for the remaining
+                items on the list as well as future international
+                shipments.Thanks again.
               </p>
             </div>
           </div>
